@@ -1,19 +1,19 @@
 class ROOT_CLASS
 
-create make
+create {ANY} make
 
-feature
+feature {ANY}
    boer: BOERDERIJ
    inv: INVOER
    uit: UITVOER
 
-feature make
+feature {ANY} make
 do
 		boerderij_aanmaken
 		gegevens_tonen
 end--make
 
-feature boerderij_aanmaken
+feature {ANY} boerderij_aanmaken
 local v1,v2,v3 : VARKEN
 do
 		create inv.maken
@@ -26,7 +26,7 @@ do
 
 end--boerderij_aanmaken
 
-feature gegevens_tonen
+feature {ANY} gegevens_tonen
 do
    create uit.maken(boer)
    uit.tonen

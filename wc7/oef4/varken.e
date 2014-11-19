@@ -1,8 +1,8 @@
 class VARKEN
 
-create baar
+create {ANY} baar
 
-feature
+feature {ANY}
    gewicht: REAL
    leeftijd : INTEGER
    naam : STRING

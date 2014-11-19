@@ -1,11 +1,11 @@
 class BOERDERIJ
 
-create make
+create {ANY} make
 
-feature vark1, vark2, vark3 : VARKEN
+feature {ANY} vark1, vark2, vark3 : VARKEN
 
 
-feature make (v1,v2,v3: VARKEN)
+feature {ANY} make (v1,v2,v3: VARKEN)
 do
 		vark1:=v1
 		vark2:=v2
@@ -13,12 +13,12 @@ do
 end--make
 
 
-feature gem_gewicht : DOUBLE
+feature {ANY} gem_gewicht : REAL
 do
    Result := (vark1.gewicht + vark2.gewicht + vark3.gewicht) / 3
 end--gem_gewicht
 
-feature gem_leeftijd : REAL
+feature {ANY} gem_leeftijd : REAL
 do
    Result := (vark1.leeftijd + vark2.leeftijd + vark3.leeftijd) / 3
 end--gem_leeftijd

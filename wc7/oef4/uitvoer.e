@@ -1,15 +1,15 @@
 class UITVOER
 
-create maken
+create {ANY} maken
 
-feature boer: BOERDERIJ
+feature {ANY} boer: BOERDERIJ
 
-feature maken (b: BOERDERIJ)
+feature {ANY} maken (b: BOERDERIJ)
 do
    boer:= b
 end--maken
 
-feature tonen
+feature {ANY} tonen
 do
 	print("%N")
 	print("De gemiddelde leeftijd van de varkens "+ boer.vark1.naam +" , " + boer.vark2.naam + " en " + boer.vark3.naam + " is ")
