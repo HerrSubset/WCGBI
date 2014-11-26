@@ -27,11 +27,9 @@ do
 end--boerderij_aanmaken
 
 feature {ANY} gegevens_tonen
-do
-   create uit.maken(boer)
-   uit.tonen
-
-
-end--gegevens_tonen
+   do
+      create uit.maken(boer)
+      uit.tonen
+   end--gegevens_tonen
 
 end--ROOT_CLASS
